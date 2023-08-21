@@ -13,6 +13,14 @@ File type: file
 File extension: .json
 Last modified date: 2022-12-12\n""",
         ),
+        (
+            {"base_path": "/home/oem/Documentos/Trybe"},
+            """File name: Trybe
+File size in bytes: 4096
+File type: directory
+File extension: [no extension]
+Last modified date: 2023-06-25\n""",
+        ),
         ({"base_path": "/home/trybe/????"}, "File '????' does not exist\n"),
     ],
 )
