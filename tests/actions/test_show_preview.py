@@ -25,13 +25,17 @@ First 5 directories: ['src', 'src/utils']\n""",
         (
             {
                 "all_files": [
-                    "src/__init__.py",
-                    "src/app.py",
+                    "src",
+                    "app.py",
+                    "app2.py",
+                    "app3.py",
+                    "app4.py",
+                    "src/app5.py",
                 ],
                 "all_dirs": ["src", "src/utils"],
             },
-            """Found 2 files and 2 directories
-First 5 files: ['src/__init__.py', 'src/app.py']
+            """Found 6 files and 2 directories
+First 5 files: ['src', 'app.py', 'app2.py', 'app3.py', 'app4.py']
 First 5 directories: ['src', 'src/utils']\n""",
         ),
     ],
