@@ -28,3 +28,16 @@ def test_show_preview(context, expected_result, capsys):
     show_preview(context)
     captured = capsys.readouterr()
     assert captured.out == expected_result
+
+
+@pytest.mark.parametrize(
+    "context, expected_result",
+    [
+        ({"all_dirs": []}, KeyError),
+        ({"all_files": []}, KeyError),
+        ({}, KeyError),
+    ],
+)
+def test_show_preview_response_fail(context, expected_result):
+    with pytest.raises(expected_result):
+        show_preview(context)
