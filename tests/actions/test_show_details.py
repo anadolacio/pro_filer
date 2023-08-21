@@ -6,17 +6,13 @@ import pytest
     "context, expected_result",
     [
         (
-            {"base_path": "/home/trybe/Downloads/Trybe.png"},
-            """File name: Trybe.png
+            {"base_path": "/home/trybe/Downloads/Trybe_logo.png"},
+            """File name: Trybe_logo.png
 File size in bytes: 22438
-File type: file
 File extension: .png
 Last modified date: 2023-06-13\n""",
         ),
-        (
-            {"base_path": "/home/trybe/????"},
-            "File '????' does not exist\n",
-        ),
+        ({"base_path": "/home/trybe/????"}, "File '????' does not exist\n"),
     ],
 )
 def test_show_details(context, expected_result, capsys):

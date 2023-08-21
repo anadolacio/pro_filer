@@ -22,6 +22,18 @@ First 5 directories: ['src', 'src/utils']\n""",
             {"all_files": [], "all_dirs": []},
             "Found 0 files and 0 directories\n",
         ),
+        (
+            {
+                "all_files": [
+                    "src/__init__.py",
+                    "src/app.py",
+                ],
+                "all_dirs": ["src", "src/utils"],
+            },
+            """Found 2 files and 2 directories
+First 5 files: ['src/__init__.py', 'src/app.py']
+First 5 directories: ['src', 'src/utils']\n""",
+        ),
     ],
 )
 def test_show_preview(context, expected_result, capsys):
