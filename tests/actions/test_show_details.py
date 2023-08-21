@@ -6,11 +6,12 @@ import pytest
     "context, expected_result",
     [
         (
-            {"base_path": "/home/trybe/Downloads/Trybe_logo.png"},
-            """File name: Trybe_logo.png
-File size in bytes: 22438
-File extension: .png
-Last modified date: 2023-06-13\n""",
+            {"base_path": "/home/oem/Documentos/Trybe/package.json"},
+            """File name: package.json
+File size in bytes: 61
+File type: file
+File extension: .json
+Last modified date: 2022-12-12\n""",
         ),
         ({"base_path": "/home/trybe/????"}, "File '????' does not exist\n"),
     ],
